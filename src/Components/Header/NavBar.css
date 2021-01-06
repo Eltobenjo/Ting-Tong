@@ -1,0 +1,84 @@
+nav {
+    display:flex;
+    justify-content: space-around;
+    min-height: 12vh;
+    width: 100%;
+    align-items: center;
+    background-color: beige;
+    background: radial-gradient(at center center, #434443b6 0%, #000000c9 100%), url('spoons-with-spices.jpg');
+    background-size: 500px;
+    
+}
+
+.logo{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+
+}
+.logo h4 {
+    margin-left: 7px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+.logo h6 {
+    margin-left: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 5px;
+    font-style: italic;
+}
+.navlinks {
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 60%;
+    font-size: 15px;
+}
+
+.link {
+letter-spacing: 2px;
+font-weight: bold;
+margin-top: 5px;
+font-size: larger;
+border-color: brown;
+border-width: 2px;
+}
+
+.link a{
+    color: rgb(255, 255, 255);
+}
+
+.link a:hover {
+    color: rgb(134, 142, 252);
+}
+
+.hamburger-toggle {
+    cursor: pointer;
+    color:white;
+    display: none;
+
+}
+
+@media screen and (max-width: 850px) {
+    .hamburger-toggle {
+        display: block;
+    }
+    .navlinks {
+        position: absolute;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 92vh;
+        align-items: center;
+        width: 100%;
+        top: 8vh;
+        background-color: teal;
+        font-size: 32px;
+        transform: translateX(100%);
+    }
+    .active {
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in;
+    }
+}
