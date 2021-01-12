@@ -7,6 +7,7 @@ import MainBody from "./Components/MainBody/MainBody";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import UserSearch from "./Components/UserSearch/Search";
+import SignIn from'./Components/Header/SignIn'
 //import ChefCards from "./Components/ChefCards/ChefCards";
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
         <Route path="/UserSearch" exact>
           <UserSearch />
         </Route>
-
+<Route path='/SignUp'>
+<SignIn />
+</Route>
       </Switch>
       <Footer />
     </div>
