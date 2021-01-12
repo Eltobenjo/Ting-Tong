@@ -1,0 +1,19 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.chef-card {
+  border: 1px solid green;
+  border-radius: 15px;
+  margin: 10px;
+}
+.dishes-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dishes-list div {
+  border: 1px solid green;
+  padding: 10px;
+  margin: 10px;
+}

@@ -1,6 +1,6 @@
 .main-footer {
-    color: white;
-    background-color: #000852;
+    color: rgb(0, 0, 0);
+    background-color: rgba(119, 118, 118, 0.548);
     padding-top: 1em;
     padding-left: 10em;
     position: relative;
@@ -11,3 +11,23 @@
   li Link {
     color: white;
   }
+
+  .socialNetwork {
+    display: flex;
+    margin-left: 80px;
+  }
+  .socialNetwork a{
+    display: inline-block;
+    justify-items: center;
+    padding: 5px;
+    margin:2px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    }
+
+    .socialNetwork a:hover{
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+      }

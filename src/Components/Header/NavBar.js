@@ -53,9 +53,7 @@ const NavBar = () => {
       </div>
       <ul className={renderClasses()}>
         <li className="link">
-          <Link to="/" onClick={closeMobileMenu}>
-            HOME
-          </Link>
+          <Link to="/">HOME</Link>
         </li>
         <li className="link">
           <Link to="/OrderFood" onClick={closeMobileMenu}>
