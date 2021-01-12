@@ -55,14 +55,10 @@ const NavBar = () => {
         <li className="link">
           <Link to="/">HOME</Link>
         </li>
-        <li className="link">
-          <Link to="/OrderFood" onClick={closeMobileMenu}>
-            ORDER FOOD
-          </Link>
-        </li>
+
         <li className="link">
           <Link to="/ChefSignUp" onClick={closeMobileMenu}>
-            CHEF SIGN-UP
+            COOK SIGN-UP
           </Link>
         </li>
         <li className="link">
@@ -73,6 +69,15 @@ const NavBar = () => {
         <li className="link">
           <Link to="/OurPromise" onClick={closeMobileMenu}>
             OUR PROMISE
+          </Link>
+        </li>
+        <li className="link">
+          <Link
+            to="/Login"
+            className=" av-links-mobile"
+            onClick={closeMobileMenu}
+          >
+            LOGIN
           </Link>
         </li>
         <li className="link">
