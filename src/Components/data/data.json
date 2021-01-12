@@ -3,7 +3,7 @@
  [
    {"id":1,
     "name":"Luigi Andretti",
-    "profile_pic":"img",
+    "profile_pic":"../Images/mario.jpg",
     "speciality":"Italian",
     "dishes":["Spagetti Bolognaise","Carbonara","Insalata Caprese"]
 },
