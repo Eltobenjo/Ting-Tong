@@ -57,7 +57,7 @@ const NavBar = () => {
         </li>
 
         <li className="link">
-          <Link to="/ChefSignUp" onClick={closeMobileMenu}>
+          <Link to="/CookSignUp" onClick={closeMobileMenu}>
             COOK SIGN-UP
           </Link>
         </li>

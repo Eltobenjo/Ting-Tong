@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import SignUp from "./Components/Header/SignUp";
 import Login from'./Components/Header/Login'
 //import ChefCards from "./Components/ChefCards/ChefCards";
+import Card from './Components/Card'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/OurPromise'>Our Promise</Route>
         <Route path='/Login'><Login /></Route>
         <Route path='/SignUp'><SignUp /></Route>
+        <Route path='/CookSignUp'><Card /></Route>
       </Switch>
       <Footer />
     </div>

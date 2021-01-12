@@ -1,0 +1,27 @@
+
+
+ [
+   {"id":1,
+    "name":"Luigi Andretti",
+    "profile_pic":"img",
+    "speciality":"Italian",
+    "dishes":["Spagetti Bolognaise","Carbonara","Insalata Caprese"]
+},
+{
+  "id":2,
+  "name":"Manoli Poppedoupoulis",
+  "profile_pic":"img",
+"speciality":"Greek",
+"dishes":["Moussaka",
+  "Fasolda","Saganaki "]
+},
+{
+  "id":3,
+  "name":"Jean-Jacques Bouvier",
+  "profile_pic":"img",
+"speciality":"French",
+"dishes":["BOEUF BOURGUIGNON",
+  "COQ AU VIN","CASSOULET"]
+}
+
+]
