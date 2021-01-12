@@ -6,8 +6,8 @@ import "./App.css";
 import MainBody from "./Components/MainBody/MainBody";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import UserSearch from "./Components/UserSearch/Search";
-import SignIn from'./Components/Header/SignIn'
+import SignUp from "./Components/Header/SignUp";
+import Login from'./Components/Header/Login'
 //import ChefCards from "./Components/ChefCards/ChefCards";
 
 function App() {
@@ -15,15 +15,12 @@ function App() {
     <div>
       <Header />
       <Switch>
-        <Route path="/" exact>
-          <MainBody />
-        </Route>
-        <Route path="/UserSearch" exact>
-          <UserSearch />
-        </Route>
-<Route path='/SignUp'>
-<SignIn />
-</Route>
+        <Route path="/" exact> <MainBody /></Route>
+        <Route path="/ChefSignUp" >Cook signup </Route>
+        <Route path='/AboutUs'>About Us</Route>
+        <Route path='/OurPromise'>Our Promise</Route>
+        <Route path='/Login'><Login /></Route>
+        <Route path='/SignUp'><SignUp /></Route>
       </Switch>
       <Footer />
     </div>
