@@ -1,5 +1,5 @@
-import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
+
+import { Switch, Route, } from "react-router-dom";
 
 import "./App.css";
 
@@ -8,9 +8,11 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import SignUp from "./Components/Header/SignUp";
 import Login from'./Components/Header/Login'
-//import ChefCards from "./Components/ChefCards/ChefCards";
+import OurPromise from './Components/Header/OurPromise'
+import Chef from './Components/Chef'
 
 function App() {
+ 
   return (
     <div>
       <Header />
@@ -18,9 +20,10 @@ function App() {
         <Route path="/" exact> <MainBody /></Route>
         <Route path="/ChefSignUp" >Cook signup </Route>
         <Route path='/AboutUs'>About Us</Route>
-        <Route path='/OurPromise'>Our Promise</Route>
+        <Route path='/OurPromise'><OurPromise /></Route>
         <Route path='/Login'><Login /></Route>
         <Route path='/SignUp'><SignUp /></Route>
+        <Route path='/CookSignUp'><Chef /></Route>
       </Switch>
       <Footer />
     </div>

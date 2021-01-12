@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 //import { BrowserRouter as Router } from "react-router-dom";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
@@ -57,7 +57,7 @@ const NavBar = () => {
         </li>
 
         <li className="link">
-          <Link to="/ChefSignUp" onClick={closeMobileMenu}>
+          <Link to="/CookSignUp" onClick={closeMobileMenu}>
             COOK SIGN-UP
           </Link>
         </li>
