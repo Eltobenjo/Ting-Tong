@@ -18,7 +18,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+       Ding Dong
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -72,7 +72,7 @@ export default function Login() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            LOGIN
           </Typography>
           <form className={classes.form} noValidate>
             <TextField
@@ -108,7 +108,7 @@ export default function Login() {
               color="primary"
               className={classes.submit}
             >
-              Sign In
+              Login
             </Button>
             <Grid container>
               
