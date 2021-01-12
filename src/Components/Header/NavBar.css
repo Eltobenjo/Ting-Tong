@@ -4,15 +4,15 @@ nav {
     min-height: 12vh;
     width: 100%;
     align-items: center;
-    background-color: beige;
-    background: radial-gradient(at center center, #434443b6 0%, #000000c9 100%), url('spoons-with-spices.jpg');
+   background-color: rgba(75, 75, 75, 0.336);
+    
     background-size: 500px;
     
 }
 
 .logo{
     display: flex;
-    color: rgb(255, 255, 255);
+    
     font-size: 32px;
 
 }
@@ -45,12 +45,19 @@ border-color: brown;
 border-width: 2px;
 }
 
-.link a{
-    color: rgb(255, 255, 255);
-}
+
 
 .link a:hover {
-    color: rgb(134, 142, 252);
+    color: rgb(2, 1, 77);
+    border: 1px solid #f0f0e6;
+    border-radius: 2px;
+    border-width: 2px;
+    border-bottom: 5px solid rgb(0, 3, 44);
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-spacing: 10px;
+    
 }
 
 .hamburger-toggle {
@@ -59,6 +66,8 @@ border-width: 2px;
     display: none;
 
 }
+
+
 
 @media screen and (max-width: 850px) {
     .hamburger-toggle {

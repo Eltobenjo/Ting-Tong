@@ -1,13 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import NavBar from './NavBar';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import NavBar from "./NavBar";
 
 function Header() {
-    return (
-        <Router>
-            <NavBar />
-        </Router>
-    )
+  return <NavBar />;
 }
 
-export default Header
+export default Header;

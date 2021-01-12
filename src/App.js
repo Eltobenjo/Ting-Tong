@@ -1,25 +1,29 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 
 import "./App.css";
 
-import MainBody from './Components/MainBody/MainBody'
-
+import MainBody from "./Components/MainBody/MainBody";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-
-
+import UserSearch from "./Components/UserSearch/Search";
+//import ChefCards from "./Components/ChefCards/ChefCards";
 
 function App() {
   return (
-
-
-    <Router>
+    <div>
       <Header />
-     <MainBody />
-      <Footer />
-    </Router>
+      <Switch>
+        <Route path="/" exact>
+          <MainBody />
+        </Route>
+        <Route path="/UserSearch" exact>
+          <UserSearch />
+        </Route>
 
+      </Switch>
+      <Footer />
+    </div>
   );
 }
 
