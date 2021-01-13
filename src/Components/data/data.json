@@ -4,7 +4,11 @@
    {"id":1,
     "name":"Luigi Andretti",
     "profile_pic":"../Images/mario.jpg",
+    "nationality":"Italian",
+    "location":"Berlin",
     "speciality":"Italian",
+    "bio":"blah blah",
+    "rating":"",
     "dishes":["Spagetti Bolognaise","Carbonara","Insalata Caprese"]
 },
 {
