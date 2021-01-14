@@ -89,6 +89,11 @@ const NavBar = () => {
             SIGN UP
           </Link>
         </li>
+        <li className="link">
+          <Link to="/ChefData" onClick={closeMobileMenu}>
+           ChefData
+          </Link>
+        </li>
       </ul>
 
       <div onClick={handleNavLinksToggle} className="hamburger-toggle">

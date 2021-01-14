@@ -113,8 +113,8 @@ export default function Login() {
             <Grid container>
               
               <Grid item>
-                <Link href="/register" variant="body2">
-                  {"Don't have an account? Register"}
+                <Link href="/Signup" variant="body2">
+                  {"Don't have an account? Signup"}
                 </Link>
               </Grid>
             </Grid>

@@ -1,7 +1,7 @@
 
 import { Switch, Route, } from "react-router-dom";
-
 import "./App.css";
+
 
 import MainBody from "./Components/MainBody/MainBody";
 import Header from "./Components/Header/Header";
@@ -10,6 +10,7 @@ import SignUp from "./Components/Header/SignUp";
 import Login from'./Components/Header/Login'
 import OurPromise from './Components/Header/OurPromise'
 import Chef from './Components/Chef'
+import ChefGrid from './Components/ChefGrid'
 
 function App() {
  
@@ -24,6 +25,7 @@ function App() {
         <Route path='/Login'><Login /></Route>
         <Route path='/SignUp'><SignUp /></Route>
         <Route path='/CookSignUp'><Chef /></Route>
+     <Route path='/Chefdata'><ChefGrid /></Route>
       </Switch>
       <Footer />
     </div>
