@@ -4,6 +4,7 @@ import ClickHere2 from "./ClickHere2";
 import UserClickHere2 from "./UserClickHere2";
 
 const MainBody = () => {
+
   return (
     <div className="mainContainer">
       <div className="boxLeft">

@@ -18,7 +18,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+       Ding Dong
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignInSide() {
+export default function Login() {
   const classes = useStyles();
 
   return (
@@ -72,7 +72,7 @@ export default function SignInSide() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            LOGIN
           </Typography>
           <form className={classes.form} noValidate>
             <TextField
@@ -101,24 +101,23 @@ export default function SignInSide() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
+            
             <Button
               type="submit"
               fullWidth
               variant="contained"
               color="primary"
+              href="/Chef"
               className={classes.submit}
             >
-              Sign In
+           Login
             </Button>
+         
             <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
+              
               <Grid item>
-                <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                <Link href="/Signup" variant="body2">
+                  {"Don't have an account? Signup"}
                 </Link>
               </Grid>
             </Grid>
