@@ -1,34 +1,20 @@
 .main-footer {
     color: rgb(0, 0, 0);
     padding-top: 1em;
+    padding-left: 10em;
     position: relative;
     bottom: 0;
     width: 100%;
-    align-items: center;
-    margin-top: 20px;
-      
+    display: flex;
   }
 
   .row {
     display:flex;
-    width: 90%;
-    justify-content: space-around;
-    margin-left: 100px;
-  }
-
-  .col {
-    text-align: center;
-    list-style-type:none;
-  
-  }
-
-  .col h4, h5 {
-    margin: 0px;
   }
 
   .socialNetwork {
     display: flex;
-padding-left: 0px;
+    margin-left: 80px;
   }
   .socialNetwork a{
     display: inline-block;
@@ -51,18 +37,4 @@ padding-left: 0px;
         font-weight: bolder;
       }
 
-      .margin{
-        margin-top: 5px;
-      }
-
-      .marginP {
-        margin-top: -15px;
-      }
-
-      .styleFont {
-        text-decoration: none;
-      }
-
-      .copyRight {
-        text-align: center;
-      }
+      

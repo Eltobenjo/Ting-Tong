@@ -2,14 +2,12 @@ import React, { useState, useEffect } from "react";
 //import { BrowserRouter as Router } from "react-router-dom";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+
 //import { Button } from './Button.js';
 
 const NavBar = () => {
   const [navLinkOpen, navLinkToggle] = useState(false);
-  // the below three statements are destructured in the above line
-  //const state = useState(false);
-  // const navLinkOpen = state[0];
-  // const navLinkToggle = state[1];
+
 
   // const [button, setButton] = useState(true);
 
@@ -47,10 +45,11 @@ const NavBar = () => {
     <nav>
       <div>
         <Link to="/" className="logo" onClick={closeMobileMenu}>
-          <i className="fas fa-mountain"></i>
+       
           <h4>Ting-Tong </h4> <h6>-Your Homely Food Partner</h6>
         </Link>
       </div>
+      
       <ul className={renderClasses()}>
         <li className="link">
           <Link to="/">HOME</Link>
@@ -85,7 +84,7 @@ const NavBar = () => {
           </Link>
         </li>
       </ul>
-
+    
       <div onClick={handleNavLinksToggle} className="hamburger-toggle">
         <i className="fas fa-bars fa-lg"></i>
       </div>
