@@ -57,8 +57,8 @@ const NavBar = () => {
         </li>
 
         <li className="link">
-          <Link to="/CookSignUp" onClick={closeMobileMenu}>
-            COOK SIGN-UP
+          <Link to="/JoinOurTeam" onClick={closeMobileMenu}>
+            JOIN OUR TEAM
           </Link>
         </li>
         <li className="link">

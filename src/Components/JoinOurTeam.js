@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignUp() {
+export default function JoinOutTeam() {
   const classes = useStyles();
 
   return (
@@ -120,9 +120,10 @@ export default function SignUp() {
             fullWidth
             variant="contained"
             color="primary"
+            href='/Success'
             className={classes.submit}
           >
-           Sign Up
+           Sign 
           </Button>
           <Grid container justify="flex-end">
             <Grid item>
