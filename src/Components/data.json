@@ -1,0 +1,56 @@
+
+
+   [
+   {
+     "id": 1,
+     "name": "Luigi Cadorna",
+     "img":{
+       "src":"../Images/cadorna.jpg",
+       "name":"Luigi Cadorna",
+       "hOffset":250,
+       "vOffset":250,
+       "alignment":"center"
+     },
+     "nationality": "Italy",
+     "location": "Berlin",
+     "speciality": "Italian",
+     "bio": "blah blah",
+     "rating": "",
+    "dishes": ["Orecchiette with tomato sauce", "Pasta con i peperoni cruschi", "Tagliatelle with ragù"]
+   },
+{
+     "id": 2,
+     "name": "Louis-Nicolas Davout",
+     "img":{
+       "src":"../Images/davout.jpg",
+       "name":"Louis-Nicolas Davout",
+       "hOffset":250,
+       "vOffset":250,
+       "alignment":"center"
+     },
+     "nationality": "French",
+     "location": "Munich",
+     "speciality": "France",
+     "bio": "blah blah",
+     "rating": "",
+    "dishes": ["Coq au vin", "Bœuf bourguignon", "Gratin dauphinois"]
+   },
+   {
+     "id": 1,
+     "name": "Alexandros Papagos",
+     "img":{
+       "src":"../Images/papagos.jpg",
+       "name":"Alexandros Papagos",
+       "hOffset":250,
+       "vOffset":250,
+       "alignment":"center"
+     },
+     "nationality": "Greece",
+     "location": "frankfurt",
+     "speciality": "Greek",
+     "bio": "blah blah",
+     "rating": "",
+    "dishes": ["Fasolada", "Tiropita ", "Bifteki"]
+   }
+  ]
+  

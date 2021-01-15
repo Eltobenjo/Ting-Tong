@@ -101,20 +101,23 @@ export default function Login() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
+            
             <Button
               type="submit"
               fullWidth
               variant="contained"
               color="primary"
+              href="/Chef"
               className={classes.submit}
             >
-              Login
+           Login
             </Button>
+         
             <Grid container>
               
               <Grid item>
-                <Link href="/register" variant="body2">
-                  {"Don't have an account? Register"}
+                <Link href="/Signup" variant="body2">
+                  {"Don't have an account? Signup"}
                 </Link>
               </Grid>
             </Grid>
