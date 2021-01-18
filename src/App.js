@@ -1,5 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
+import TemporaryMenu from "./Components/TemporaryMenu";
+import TemporaryShoppingCart from "./Components/TemporaryShoppingCart";
 
 import "../public/Images/BgImg/BgImg9.svg";
 
@@ -14,6 +16,7 @@ import Search from "./Components/UserSearch/Search";
 import ChefNextSteps from "./Components/ChefNextSteps/ChefNextSteps";
 //import ChefCards from "./Components/ChefCards/ChefCards";
 import PlaceOrder from "./Components/PlacingOrder/PlaceOrder";
+import PlaceOrder2 from "./Components/PlacingOrder/PlaceOrder2";
 
 import SignUp from "./Components/JoinOurTeam";
 import Login from "./Components/Header/Login";
@@ -27,6 +30,8 @@ function App() {
   return (
     <div>
       <Header />
+      <TemporaryMenu />
+
       <Switch>
         <Route path="/" exact>
           <MainBody />
@@ -67,6 +72,9 @@ function App() {
         </Route>
         <Route path="/PlaceOrder" exact>
           <PlaceOrder />
+        </Route>
+        <Route path="/PlaceOrder2" exact>
+          <PlaceOrder2 />
         </Route>
         <Route path="/UserSearch" exact>
           <Search />
