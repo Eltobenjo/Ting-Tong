@@ -7,11 +7,7 @@ align-content: center;
 }
 
 .box-Left{
-    
-  display:flex;
-  justify-content: center;
-align-content: center;
-  width:700px;
+    width:700px;
     height:550px;
     background-color:#b3b3b39d;
     border-radius:10px;

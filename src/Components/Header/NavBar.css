@@ -11,17 +11,23 @@ nav {
     display: flex;
     font-size: 30px;
     text-decoration: none;
-    
+    }
 
-}
-.logo h4 {
+    .logo-img {
+        width:40px;
+        height:35px;
+        margin-top: 18px;
+    }
+
+
+    .logo h4 {
     display: flex;
     margin-left: 2px;
     letter-spacing: 1px;
     font-weight: bolder;
     margin-top: 10px;
     margin-left: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(1, 87, 1);
     }
 .logo h6 {
     margin-left: 5px;
@@ -29,7 +35,7 @@ nav {
     font-weight: bold;
     margin-top: 19px;
     font-style: italic;
-    color: rgb(255, 255, 255);
+    color: rgb(1, 87, 1);
 }
 
 .navlinks {
@@ -103,4 +109,15 @@ text-decoration: none;
         transform: translateX(0%);
         transition: transform 0.5s ease-in;
     }
+}
+
+.cart-num {
+    margin-left: 5px;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+span {
+
+    margin-bottom: 10px;
 }
