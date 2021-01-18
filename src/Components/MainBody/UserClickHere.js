@@ -1,10 +1,12 @@
 import React from "react";
 import "./UserClickHere.css";
-import User1 from "./User1.jpg";
-import User2 from "./User2.jpg";
-import User3 from "./User3.jpg";
-import User4 from "./User4.jpg";
-import User5 from "./User5.png";
+import { Link } from "react-router-dom";
+
+import User2 from "../assets/UserImg/User2.jpg";
+import User3 from "../assets/UserImg/User3.jpg";
+import User4 from "../assets/UserImg/User4.jpg";
+import User5 from "../assets/UserImg/User5.png";
+import User6 from "../assets/UserImg/User6.jpg"
 
 export default function UserClickHere() {
   return (
@@ -18,9 +20,14 @@ export default function UserClickHere() {
           </div>
         </section>
       </div>
-      <button type="submit" className="button">
-        Order Food
-      </button>
+
+      <div className="btnAlign">
+      <Link to="/UserSignUp">
+            <button type="submit" className="button">
+              Order Food
+            </button>
+          </Link>
+      </div>
     </div>
   );
 }
