@@ -3,13 +3,9 @@ import React, { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 
-//import { Button } from './Button.js';
 
 const NavBar = () => {
   const [navLinkOpen, navLinkToggle] = useState(false);
-
-
-  // const [button, setButton] = useState(true);
 
   const handleNavLinksToggle = () => {
     navLinkToggle(!navLinkOpen);
@@ -25,21 +21,6 @@ const NavBar = () => {
     return classes;
   };
   const closeMobileMenu = () => navLinkToggle(false);
-
-  // the bellow code was to add an additional signup button and make it responsive when the window is less than 960px
-  //       const showButton = () => {
-  //           if (window.innerWidth <= 960) {
-  //             setButton(false);
-  //           } else {
-  //             setButton(true);
-  //           }
-  //         };
-
-  //         useEffect(() => {
-  //           showButton();
-  //         }, []);
-
-  //         window.addEventListener('resize', showButton);
 
   return (
     <nav>
@@ -73,8 +54,7 @@ const NavBar = () => {
         <li className="link">
           <Link
             to="/Login"
-            className=" av-links-mobile"
-            onClick={closeMobileMenu}
+          onClick={closeMobileMenu}
           >
             LOGIN
           </Link>
@@ -82,7 +62,6 @@ const NavBar = () => {
         <li className="link">
           <Link
             to="/SignUp"
-            className=" av-links-mobile"
             onClick={closeMobileMenu}
           >
             SIGN UP

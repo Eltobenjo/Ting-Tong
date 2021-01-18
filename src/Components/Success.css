@@ -1,0 +1,71 @@
+
+
+.steppers {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.steppers img{
+    width: 1000px;
+    
+    align-self: center;
+    align-content: center;
+}
+
+
+.shine h1{
+	font-size: 2em;
+	margin: 0 auto;
+	margin-bottom: 1em;
+    font-weight: bold;
+    background-color: rgba(11, 109, 2, 0.377);
+  
+   padding-left: 10px;
+    padding-right: 10px;
+    border: black, 5px;
+    border-style:groove;
+    border-block-color: black;
+}
+
+.shine {
+display: flex;
+    background-color: #222 gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+	background-size: 150px;
+	color: rgb(255, 254, 254);
+	background-clip: text;
+	animation-duration: 5s;
+	animation-name: shine;
+	animation-iteration-count: infinite;
+	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+.selectionCriteria {
+    width:750px;
+    height: 200px;
+   background-color:#0000007c;
+    border-radius:10px;
+    position:relative;
+    margin:0 auto;
+    color:whitesmoke;
+    
+    
+}
+.selectionCriteria h3{
+margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+padding-top: 10px;    
+}
+
+.selectionCriteria p{
+    margin: 0 auto;
+    margin-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+     
+    }
+
+ul {
+    margin-bottom: 10px;
+}

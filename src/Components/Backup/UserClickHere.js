@@ -1,10 +1,11 @@
 import React from "react";
-import "./UserClickHere2.css";
+import "./UserClickHere.css";
 import User1 from "./User1.jpg";
 import User2 from "./User2.jpg";
 import User3 from "./User3.jpg";
 import User4 from "./User4.jpg";
 import User5 from "./User5.png";
+import User6 from "./Components/assets/UserImg/User6.jpg"
 
 export default function UserClickHere() {
   return (
@@ -18,12 +19,9 @@ export default function UserClickHere() {
           </div>
         </section>
       </div>
-
-      <div className="btnAlign">
       <button type="submit" className="button">
-          Order Food
+        Order Food
       </button>
-      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./ChefSignUp.css";
 import { Link } from "react-router-dom";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
@@ -13,8 +14,6 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-
-import ChefSteppers from "../assets/ChefImg/chefRegisSteppers.jpg";
 
 function Copyright() {
   return (
@@ -53,11 +52,11 @@ export default function SignUp() {
   const classes = useStyles();
 
   return (
-    
-    <Container component="main" maxWidth="xs">
-    <img src={ChefSteppers} alt="Chef Next Steps" />
+    <Container component="main" maxWidth="sm">
+      <div className="ChefSU-Heading">
+        <h1>SIGN UP to be part of "Worlds Largekt Kitchen"</h1>
+      </div>
       <CssBaseline />
-     
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
@@ -120,15 +119,17 @@ export default function SignUp() {
               />
             </Grid>
           </Grid>
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Sign Up
-          </Button>
+          <Link to="/Success">
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+            >
+              Sign Up
+            </Button>{" "}
+          </Link>
           <Grid container justify="flex-end">
             <Grid item>
               <Link to="/Login">Already have an account? Login</Link>

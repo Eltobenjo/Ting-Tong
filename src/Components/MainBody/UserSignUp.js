@@ -1,4 +1,5 @@
 import React from "react";
+import "./UserSignUp.css";
 import { Link } from "react-router-dom";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
@@ -13,8 +14,6 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-
-import ChefSteppers from "../assets/ChefImg/chefRegisSteppers.jpg";
 
 function Copyright() {
   return (
@@ -53,12 +52,12 @@ export default function SignUp() {
   const classes = useStyles();
 
   return (
-    
     <Container component="main" maxWidth="xs">
-    <img src={ChefSteppers} alt="Chef Next Steps" />
+        <div className="ChefSU-Heading">
+        <h1>SIGN UP to select a range of 'Healthy' and 'Reasoably Priced' food</h1>
+      </div>
       <CssBaseline />
-     
-      <div className={classes.paper}>
+        <div className={classes.paper}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
@@ -125,13 +124,16 @@ export default function SignUp() {
             fullWidth
             variant="contained"
             color="primary"
+            
             className={classes.submit}
           >
-            Sign Up
+           Sign Up
           </Button>
           <Grid container justify="flex-end">
             <Grid item>
-              <Link to="/Login">Already have an account? Login</Link>
+              <Link to="/Login">
+                Already have an account? Login
+              </Link>
             </Grid>
           </Grid>
         </form>
