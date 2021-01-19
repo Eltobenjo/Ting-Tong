@@ -76,7 +76,7 @@ function App() {
           <Success />
         </Route>
         <Route path="/Chefdata">
-          <ChefGrid />
+          <Chef />
         </Route>
         <Route path="/ChefNextSteps" exact>
           <ChefNextSteps />

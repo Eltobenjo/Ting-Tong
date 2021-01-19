@@ -13,7 +13,20 @@ background-size: 70%;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    display:flex;
+    flex-direction: row;
+   margin-left: 35%;
+    position: relative;
+    left: 0%;
+}
+.chef {
+    display:flex;
+    flex-direction: row;
+    margin: 0 250px;
+    position: relative;
+    left: 0%;
+  
+}
+.chefCard{
+    margin: 10px;
 }
