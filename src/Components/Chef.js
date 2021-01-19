@@ -18,9 +18,10 @@ export default function ImgMediaCard() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className='chef'>
      {chefs.map(chef=>{
                 return (
+                  <div className='chefCard'>
                   <Card className={classes.root}>
                     <CardActionArea>
                       <CardMedia
@@ -56,6 +57,7 @@ export default function ImgMediaCard() {
                       </Button>
                     </CardActions>
                   </Card>
+                  </div>
                 );
         })}
     </div>

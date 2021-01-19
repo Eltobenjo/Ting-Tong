@@ -9,25 +9,24 @@ export default function BerlinMenu() {
 
   const handleClick = (e) => {
       const dishInTheOrder = {
-          quantity: 2,
-          dishId: e.target.id
-      }
+        quantity: 1,
+        dishId: e.target.id,
+        price:e.target.dataset.price ,
+      };
     setShoppingCart((previousState) => [...previousState, dishInTheOrder]);
   };
  const berlin = chefs.find((chef) => chef.location === 'Berlin');
 
   return (
-     
     <div className="App">
-         MENU
-         
+      MENU
       <ul>
-       {berlin.dishes.map((item)=>(
-          
-          <li onClick={handleClick}>
-            {item} )
+        {berlin.dishes.map((item) => (
+          <li onClick={handleClick} id={item.id} data-price={item.price}>
+            {item.price}
+            {item.name} )
           </li>
-       ))}
+        ))}
       </ul>
     </div>
   );

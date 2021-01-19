@@ -48,7 +48,7 @@ export default function ChefCard(chefs) {
   };
 
   return (
- <div>
+ <div className='chef'>
 {chefs.map(
 
     <Card className={classes.root}>
