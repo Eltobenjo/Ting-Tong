@@ -1,10 +1,10 @@
 import React, {useContext} from "react";
 import {AppContext } from "../Context/AppContext"
-import dishes from './data.json'
+import chefs from './data.json'
 
 
 
-export default function TemporaryMenu() {
+export default function BerlinMenu() {
   const { setShoppingCart } = useContext(AppContext);
 
   const handleClick = (e) => {
@@ -14,16 +14,22 @@ export default function TemporaryMenu() {
       }
     setShoppingCart((previousState) => [...previousState, dishInTheOrder]);
   };
+ const berlin = chefs.find((chef) => chef.location === 'Berlin');
+
   return (
+     
     <div className="App">
-        TEMPORARY TEST MENU
+         MENU
+         
       <ul>
-        {dishes.map((dish) => (
-          <li id={dish.id} onClick={handleClick}>
-            {dish.dishes} 
+       {berlin.dishes.map((item)=>(
+          
+          <li onClick={handleClick}>
+            {item} )
           </li>
-        ))}
+       ))}
       </ul>
     </div>
   );
 }
+

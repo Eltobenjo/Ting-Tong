@@ -1,7 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
-import TemporaryMenu from "./Components/TemporaryMenu";
-import TemporaryShoppingCart from "./Components/TemporaryShoppingCart";
+//import TemporaryMenu from "./Components/TemporaryMenu";
+//import TemporaryShoppingCart from "./Components/TemporaryShoppingCart";
 
 import "../public/Images/BgImg/BgImg9.svg";
 
@@ -25,12 +25,17 @@ import Chef from "./Components/Chef";
 import ChefGrid from "./Components/ChefGrid";
 import JoinOurTeam from "./Components/JoinOurTeam";
 import Success from "./Components/Success";
+import ControlledOpenSelect from "./Components/ControlledOpenSelect";
+import ChefNew from "./Components/ChefCard";
+import Berlin from './Components/Berlin'
+import Frankfurt from "./Components/Frankfurt";
+import Munich from "./Components/Munich";
+
 
 function App() {
   return (
     <div>
       <Header />
-      <TemporaryMenu />
 
       <Switch>
         <Route path="/" exact>
@@ -45,6 +50,12 @@ function App() {
         </Route>
         <Route path="/Login">
           <Login />
+        </Route>
+        <Route path="/Order">
+          <ControlledOpenSelect />
+        </Route>
+        <Route path="/ChefNew">
+          <ChefNew />
         </Route>
         <Route path="/SignUp">
           <SignUp />
@@ -78,6 +89,15 @@ function App() {
         </Route>
         <Route path="/UserSearch" exact>
           <Search />
+        </Route>
+        <Route path="/Berlin" exact>
+          <Berlin />
+        </Route>
+        <Route path="/Frankfurt" exact>
+         <Frankfurt />
+        </Route>
+        <Route path="/Munich" exact>
+          <Munich />
         </Route>
       </Switch>
       <Footer />
