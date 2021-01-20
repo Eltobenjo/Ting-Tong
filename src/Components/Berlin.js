@@ -11,13 +11,11 @@ import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import { red } from "@material-ui/core/colors";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import chefs from "./data.json";
 import BerlinMenu from "./BerlinMenu";
-import { AutoComplete } from "material-ui";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -59,7 +57,7 @@ const result = chefs.find(chef=>chef.location==='Berlin');
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            R
+            
           </Avatar>
         }
         action={
@@ -76,17 +74,15 @@ const result = chefs.find(chef=>chef.location==='Berlin');
         
       />
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="h6" color="textSecondary" component="h6">
           {result.bio}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
+        
+        
+          See Menu Here !
+       
         <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,

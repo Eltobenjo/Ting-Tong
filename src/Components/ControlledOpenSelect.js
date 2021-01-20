@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
     minWidth: 120,
+    width:500,
   },
 }));
 
@@ -35,7 +36,7 @@ export default function ControlledOpenSelect() {
   };
 
   return (
-    <div>
+    <div className='selector'>
       <Button className={classes.button} onClick={handleOpen}>Choose Location</Button>
       <FormControl className={classes.formControl}>
         <InputLabel id="demo-controlled-open-select-label">City</InputLabel>
@@ -49,7 +50,7 @@ export default function ControlledOpenSelect() {
           onChange={handleChange}
         >
           <MenuItem value="">
-            <em>None</em>
+           
           </MenuItem>
           <MenuItem value={city}>
             <a href="/Berlin">Berlin</a>

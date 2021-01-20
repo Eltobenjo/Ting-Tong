@@ -65,16 +65,32 @@ export default function TemporaryMenu() {
                         {addRemove(order.dishId)}
                       </h3>
                       quantity: {order.quantity}
-                      subtotal: {order.quantity * dish.price}
+                      subtotal:€ {order.quantity * dish.price}
                     </li>
                   </ol>{" "}
                 </ul>
               </div>
             </div>
-          );
+          )        })}  Total:  €  {totalPrice}</div>
+     
+           <div className="box-right">             <h2>Confirm your delivery details</h2>
+                <div className="ordering-area-display">
+       <div className="form"> 
+                        <input type="text" className="form-control" placeholder="Full name" />
+                    </div>
+                    <div>
+                        <input type="text" className="form-control" placeholder="Phone number" />
+                        </div>
+                        <textarea placeholder="Delivery Address" className="address-control"></textarea>
+                    <div>
+                        <button className="order-btn"><span>Order</span></button>
+</div>
+              
+
         })}{" "}
         {totalPrice}
       </div>
+
 
       <div className="box-right">
         {" "}
