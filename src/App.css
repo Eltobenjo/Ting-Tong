@@ -36,6 +36,7 @@ background-size: 64% 83%;
    
 }
 
+
 li {
     list-style: none;
     
@@ -127,4 +128,14 @@ ul {
     display: flex;
     height: 50px;
     width: 100%;
+
+.card-header {
+    text-align: center;
+}
+
+.card-header h3{
+
+    margin-top: -80px;
+    
+
 }

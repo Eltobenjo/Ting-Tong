@@ -9,6 +9,8 @@ import PayWallet from "../assets/Payment/PayWallet.png";
 function PaymentPage() {
     return (
         <div>
+            <div className="payment-title"><h1>Please Select Your Payment Option</h1></div>
+            
             <div className="payment-icons">
                 <div>
                 <img className="paycc" src={PayCC} alt="Chef" />

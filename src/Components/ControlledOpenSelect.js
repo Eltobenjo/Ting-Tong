@@ -51,6 +51,7 @@ export default function ControlledOpenSelect() {
       </div>
       <FormControl className={classes.formControl}>
         <InputLabel id="demo-controlled-open-select-label">City</InputLabel>
+        
         <Select
           labelId="demo-controlled-open-select-label"
           id="demo-controlled-open-select"
