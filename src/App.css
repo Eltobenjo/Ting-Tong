@@ -37,3 +37,13 @@ background-size: 64% 83%;
     margin-bottom: 500px;
    
 }
+
+.card-header {
+    text-align: center;
+}
+
+.card-header h3{
+
+    margin-top: -80px;
+    
+}

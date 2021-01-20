@@ -40,6 +40,7 @@ export default function ControlledOpenSelect() {
       <Button className={classes.button} onClick={handleOpen}>Choose Location</Button>
       <FormControl className={classes.formControl}>
         <InputLabel id="demo-controlled-open-select-label">City</InputLabel>
+        
         <Select
           labelId="demo-controlled-open-select-label"
           id="demo-controlled-open-select"
