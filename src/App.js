@@ -16,7 +16,9 @@ import Search from "./Components/UserSearch/Search";
 import ChefNextSteps from "./Components/ChefNextSteps/ChefNextSteps";
 //import ChefCards from "./Components/ChefCards/ChefCards";
 import PlaceOrder from "./Components/PlacingOrder/PlaceOrder";
-import PlaceOrder2 from "./Components/PlacingOrder/PlaceOrder2";
+import PaymentPage from "./Components/PlacingOrder/PaymentPage";
+import ChefPage from "./Components/ChefCards/ChefPage";
+
 
 import SignUp from "./Components/JoinOurTeam";
 import Login from "./Components/Header/Login";
@@ -84,9 +86,6 @@ function App() {
         <Route path="/PlaceOrder" exact>
           <PlaceOrder />
         </Route>
-        <Route path="/PlaceOrder2" exact>
-          <PlaceOrder2 />
-        </Route>
         <Route path="/UserSearch" exact>
           <Search />
         </Route>
@@ -98,6 +97,12 @@ function App() {
         </Route>
         <Route path="/Munich" exact>
           <Munich />
+        </Route>
+        <Route path="/ChefPage" exact>
+          <ChefPage />
+        </Route>
+        <Route path="/PaymentPage" exact>
+          <PaymentPage />
         </Route>
       </Switch>
       <Footer />

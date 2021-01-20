@@ -1,14 +1,14 @@
 .mainContainer{
     display: grid;
     grid: 100% / auto auto;
- 
+ margin-top: 50px;
   
 }
 
 .boxLeft{
     width:620px;
     height:520px;
-    background-color:#0000007c;
+   
     border-radius:30px;
     position:relative;
     margin:0 auto;
@@ -19,18 +19,18 @@ margin-left: 200px;
    .boxLeft h1{
        margin-top: 315px;
        text-align: center;
-       color: white;
+       color: rgb(5, 5, 5);
    }
 
    .chefNote {
     text-align: center;
-    color: white;
+    color: rgb(7, 7, 7);
    }
   
    .boxRight {
     width:620px;
     height:520px;
-    background-color:#0000007c;
+   
     border-radius:30px;
     position:relative;
        
@@ -39,10 +39,15 @@ margin-left: 200px;
     .boxRight h1{
         margin-top: 315px;
         text-align: center;
-        color: white;
+        color: rgb(255, 255, 255);
     }
  
-    .chefNote {
+    .chefNote1 {
      text-align: center;
-     color: white;
+     color: rgb(5, 5, 5);
     }
+
+    .chefNote2 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+       }

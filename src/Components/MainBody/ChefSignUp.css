@@ -1,6 +1,26 @@
-.ChefSU-Heading h1 {
-    width: 1000px;
+.ChefSU-Heading{
     justify-content: center;
-    color:rgb(164, 255, 184);
-    margin-left: -30px;
+    width: 200%;
+}
+
+.ChefSU-Heading h1 {
+   
+    color:rgb(11, 2, 136);
+
+}
+
+.csignup-color h1{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.cSignUp-btn span{
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+}
+.clogin{
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
