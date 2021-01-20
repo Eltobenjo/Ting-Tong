@@ -21,7 +21,6 @@ export default function TemporaryMenu() {
   let addRemoveButton = (id) => {
     return (
       <div className="qty-align">
-        
         <button className="remove-btn" id={id} onClick={removeFromShoppingCart}>
           Remove
         </button>
@@ -45,13 +44,7 @@ export default function TemporaryMenu() {
             <div className="list-style">
               <div className="li-list">
                 <ul className="list">
-
-                  
                   <ol>
-
-                
-                  
-
                     <li>
                       <h3 className="dish-name">
                         {dish.name} <div>Cost:€{dish.price}</div>
@@ -60,44 +53,14 @@ export default function TemporaryMenu() {
                         </div>
                       </h3>
 
-                      quantity: {order.quantity}
-                      subtotal:€ {order.quantity * dish.price}
                     </li>
                   </ol>
                 </ul>
               </div>
             </div>
-          )        })}  Total:  €  {totalPrice}</div>
+          )        })}  </div>
      
-           <div className="box-right">             <h2>Confirm your delivery details</h2>
-                <div className="ordering-area-display">
-       <div className="form"> 
-                        <input type="text" className="form-control" placeholder="Full name" />
-                    </div>
-                    <div>
-                        <input type="text" className="form-control" placeholder="Phone number" />
-                        </div>
-                        <textarea placeholder="Delivery Address" className="address-control"></textarea>
-                    <div>
-                        <button className="order-btn"><span>Order</span></button>
-</div>
-              
 
-    
-       
-
-                      <div className="subtotal"><h4>
-                      Ordered Quantity: {order.quantity}
-                      Price:€ {order.quantity * dish.price}
-                      </h4></div> </li>
-                 <hr></hr>
-                </ul>
-              </div>
-            </div>
-          );
-        })}{" "}
-
-      </div>
 
       <div className="box-right">
         {" "}
@@ -132,7 +95,8 @@ export default function TemporaryMenu() {
           </div>
         </div>
       </div>
-    </div>
-    </div>
+  </div>
+  
+
   );
 }
