@@ -19,12 +19,11 @@ export default function BerlinMenu() {
 
   return (
     <div className="App">
-      MENU
       <ul>
         {berlin.dishes.map((item) => (
           <li onClick={handleClick} id={item.id} data-price={item.price}>
-            {item.price}
-            {item.name} )
+            {item.name} {''} 
+            €{item.price}
           </li>
         ))}
       </ul>

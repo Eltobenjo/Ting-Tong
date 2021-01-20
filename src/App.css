@@ -18,6 +18,7 @@ background-size: 70%;
    margin-left: 35%;
     position: relative;
     left: 0%;
+    font-size:large ;
 }
 .chef {
     display:flex;
@@ -29,4 +30,9 @@ background-size: 70%;
 }
 .chefCard{
     margin: 10px;
+}
+.selector {
+    margin-left: 750px;
+    margin-bottom: 500px;
+   
 }

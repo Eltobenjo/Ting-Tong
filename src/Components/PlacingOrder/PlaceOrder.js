@@ -60,14 +60,14 @@ export default function TemporaryMenu() {
                     <li>
                          <h3 className="dish-name">{dish.name}{addRemove()}</h3>
                       quantity: {order.quantity}
-                      subtotal: {order.quantity * dish.price}
+                      subtotal:€ {order.quantity * dish.price}
                     </li>
                   </ol>{" "}
                 </ul>
               </div>
             </div>
           );
-        })}      {totalPrice}</div>
+        })}  Total:  €  {totalPrice}</div>
      
            <div className="box-right">             <h2>Confirm your delivery details</h2>
                 <div className="ordering-area-display">
