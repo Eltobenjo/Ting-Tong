@@ -14,29 +14,28 @@ import { red } from "@material-ui/core/colors";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import chefs from "./data.json";
-import BerlinMenu from "./BerlinMenu";
+import DresdenMenu from "./DresdenMenu";
 import { CenterFocusStrong } from "@material-ui/icons";
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 650,
-  
+    maxWidth: 600,
+    margin: "auto",
     textAlign: "center",
-    marginLeft:"auto",
-    marginRight:"auto",
-    marginTop:0,
-   
+    fontSize:"2 em",
   },
   media: {
-    height: 0,
-    width: "60%",
-    paddingTop: "50%", // 16:9
+    height: 100,
+    width: "80%",
+    paddingTop: "60%", // 16:9
     marginLeft: "auto",
     marginRight: "auto",
- 
   },
 
+  
+
+  
 
   expand: {
     transform: "rotate(0deg)",
@@ -61,28 +60,25 @@ export default function Berlin() {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-const result = chefs.find(chef=>chef.location==='Berlin');
+const result = chefs.find(chef=>chef.location==='Dresden');
 
   return (
     <div className="card-container">
       <div className="card">
-        
+        <h1>Active Chefs in Berlin</h1>
         <Card className={classes.root}>
           <CardHeader
-            avatar={<Avatar aria-label="" className={classes.avatar}></Avatar>}
+            avatar={
+              <Avatar aria-label="" className={classes.avatar}></Avatar>
+            }
             action={
               <IconButton aria-label="settings">
                 <MoreVertIcon />
               </IconButton>
             }
+            title={result.name}
+            subheader={result.location}
           />
-          <div className="cardHeader">
-            <h3>{result.name}</h3>
-          </div>
-          <div className="cardHeader">
-            <h3>{result.location}</h3>
-          </div>
-
           <CardMedia className={classes.media} image={result.img.src} />
           <CardContent>
             <Typography variant="h6" color="textSecondary" component="h6">
@@ -106,13 +102,11 @@ const result = chefs.find(chef=>chef.location==='Berlin');
             <CardContent>
               <Typography paragraph>Dishes:</Typography>
               <Typography paragraph>
-                
-                  <ul>
-                    <li>
-                      <BerlinMenu />
-                    </li>
-                  </ul>
-                
+                <ul>
+                  <li>
+                    <DresdenMenu />
+                  </li>
+                </ul>
               </Typography>
               <Typography paragraph></Typography>
               <Typography paragraph></Typography>

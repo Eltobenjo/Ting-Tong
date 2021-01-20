@@ -52,6 +52,7 @@ const result = chefs.find(chef=>chef.location==='Munich');
 
   return (
     <Card className={classes.root}>
+    <h1>Active chefs in Berlin</h1>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>

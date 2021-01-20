@@ -12,12 +12,12 @@
     "nationality": "Italy",
     "location": "Berlin",
     "speciality": "Italian",
-    "bio": "blah blah",
+    "bio": "",
     "rating": "",
     "dishes": [
-      { "price": 3, "name": "Orecchiette with tomato sauce", "id": 1 },
-      { "price": 3, "name": "Pasta con i peperoni cruschi", "id": 2 },
-      { "price": 3, "name": "Tagliatelle with ragù", "id": 3 }
+      { "price": 6, "name": "Orecchiette with tomato sauce", "id": 1 },
+      { "price": 7, "name": "Pasta con i peperoni cruschi", "id": 2 },
+      { "price": 9, "name": "Tagliatelle with beef ragù", "id": 3 }
     ]
   },
   {
@@ -30,15 +30,15 @@
       "vOffset": 250,
       "alignment": "center"
     },
-    "nationality": "French",
+    "nationality": "France",
     "location": "Munich",
     "speciality": "France",
     "bio": "blah blah",
     "rating": "",
     "dishes": [
-      { "price": 3, "name": "Coq au vin", "id": 4 },
-      { "price": 3, "name": "Bœuf bourguignon", "id": 5 },
-      { "price": 3, "name": "Gratin dauphinois", "id": 6 }
+      { "price": 8, "name": "Coq au vin", "id": 4 },
+      { "price": 9, "name": "Bœuf bourguignon", "id": 5 },
+      { "price": 4, "name": "Gratin dauphinois", "id": 6 }
     ]
   },
   {
@@ -57,30 +57,30 @@
     "bio": "blah blah",
     "rating": "",
     "dishes": [
-      { "price": 3, "name": "Fasolada", "id": 7 },
-      { "price": 3, "name": "Tiropita ", "id": 8 },
-      { "price": 3, "name": "Bifteki", "id": 9 }
+      { "price": 5, "name": "Fasolada", "id": 7 },
+      { "price": 5, "name": "Tiropita ", "id": 8 },
+      { "price": 9, "name": "Bifteki", "id": 9 }
     ]
   },
   {
     "id": 4,
-    "name": "Alexandros Papagos",
+    "name": "Rebecca Cohen",
     "img": {
-      "src": "../Images/papagos.jpg",
-      "name": "Alexandros Papagos",
+      "src": "../Images/Rebecca.jpg",
+      "name": "rebecca Cohen",
       "hOffset": 250,
       "vOffset": 250,
       "alignment": "center"
     },
-    "nationality": "Greece",
-    "location": "Berlin",
-    "speciality": "Greek",
+    "nationality": "Israel",
+    "location": "Dresden",
+    "speciality": "Kosher",
     "bio": "blah blah",
     "rating": "",
     "dishes": [
-      { "price": 3, "name": "Fasolada", "id": 7 },
-      { "price": 3, "name": "Tiropita ", "id": 8 },
-      { "price": 3, "name": "Bifteki", "id": 9 }
+      { "price": 9, "name": "Brisket", "id": 7 },
+      { "price": 8, "name": "Gefilte Fish ", "id": 8 },
+      { "price": 5, "name": "Knishe", "id": 9 }
     ]
   }
 ]

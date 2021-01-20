@@ -10,7 +10,7 @@ function ChefPage() {
         <div className="CPmainContainer">
              
             <div className="CPboxLeft">
-                <div>
+                <div className='cadorna'>
                     <img className="cadorna-img" src={cadorna} alt="Chef Cadorna" />  </div>
                 <div>
                     <img className="star-img" src={fournhalfstar} alt="Chef Cadorna" />

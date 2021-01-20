@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../../Context/AppContext";
 import "./PlaceOrder.css";
-import chefData from "../data.json";
+
 import dishesData from "../dishes.json";
 
 export default function TemporaryMenu() {
@@ -57,7 +57,7 @@ export default function TemporaryMenu() {
             <div className="list-style">
               <div className="li-list">
                 <ul className="list">
-                  {" "}
+                  
                   <ol>
                     <li>
                       <h3 className="dish-name">
@@ -67,7 +67,7 @@ export default function TemporaryMenu() {
                       quantity: {order.quantity}
                       subtotal:€ {order.quantity * dish.price}
                     </li>
-                  </ol>{" "}
+                  </ol>
                 </ul>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function TemporaryMenu() {
 </div>
               
 
-        })}{" "}
+        {" "}
         {totalPrice}
       </div>
 
@@ -123,6 +123,7 @@ export default function TemporaryMenu() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

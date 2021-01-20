@@ -10,7 +10,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import chefs from "./data.json";
 
-import "./chef.css"
+import "./Chef.css"
 
 const useStyles = makeStyles({
   root: {

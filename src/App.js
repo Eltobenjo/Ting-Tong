@@ -32,7 +32,7 @@ import ChefNew from "./Components/ChefCard";
 import Berlin from './Components/Berlin'
 import Frankfurt from "./Components/Frankfurt";
 import Munich from "./Components/Munich";
-
+import Dresden from "./Components/Dresden";
 
 function App() {
   return (
@@ -104,6 +104,9 @@ function App() {
         <Route path="/PaymentPage" exact>
           <PaymentPage />
         </Route>
+<Route path='/Dresden'>
+<Dresden/></Route>
+
       </Switch>
       <Footer />
     </div>
