@@ -14,3 +14,10 @@
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
     }
+
+    .payment-title{
+text-align: center;
+color: darkblue;
+margin-bottom: 100px;
+margin-top: 100px;
+    }

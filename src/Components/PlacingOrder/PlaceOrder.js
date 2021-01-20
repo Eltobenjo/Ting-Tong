@@ -18,24 +18,10 @@ export default function TemporaryMenu() {
     setShoppingCart((previousState) => [...previousState, e.target.id]);
   };
 
-  let addRemove = (id) => {
+  let addRemoveButton = (id) => {
     return (
       <div className="qty-align">
-        <label className="qty-quantity">Qty</label>
-        <select className="add-quantity">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select>
-        <button className="adding-btn">
-          <span>Add </span>
-        </button>
+        
         <button className="remove-btn" id={id} onClick={removeFromShoppingCart}>
           Remove
         </button>
@@ -46,54 +32,45 @@ export default function TemporaryMenu() {
   return (
     <div className="main-Container">
       <div className="box-Left">
-        <div className="order-title">
+        <div className="order-title-lft">
           <h2>Review Your Order</h2>
+          <hr></hr>
         </div>
+       
         {shoppingCart.map((order) => {
           const dish = dishesData.find((dish) => dish.id == order.dishId);
           console.log({ order });
-
+   
           return (
             <div className="list-style">
               <div className="li-list">
                 <ul className="list">
-                  {" "}
-                  <ol>
+                
+                  
                     <li>
                       <h3 className="dish-name">
-                        {dish.name}
-                        {addRemove(order.dishId)}
+                        {dish.name} <div>Cost:€{dish.price}</div>
+                        <div className="addrem-btn">
+                          {addRemoveButton(order.dishId)}
+                        </div>
                       </h3>
-                      quantity: {order.quantity}
-                      subtotal:€ {order.quantity * dish.price}
-                    </li>
-                  </ol>{" "}
+                      <div className="subtotal"><h4>
+                      Ordered Quantity: {order.quantity}
+                      Price:€ {order.quantity * dish.price}
+                      </h4></div> </li>
+                 <hr></hr>
                 </ul>
               </div>
             </div>
-          )        })}  Total:  €  {totalPrice}</div>
-     
-           <div className="box-right">             <h2>Confirm your delivery details</h2>
-                <div className="ordering-area-display">
-       <div className="form"> 
-                        <input type="text" className="form-control" placeholder="Full name" />
-                    </div>
-                    <div>
-                        <input type="text" className="form-control" placeholder="Phone number" />
-                        </div>
-                        <textarea placeholder="Delivery Address" className="address-control"></textarea>
-                    <div>
-                        <button className="order-btn"><span>Order</span></button>
-</div>
-              
-
+          );
         })}{" "}
-        {totalPrice}
       </div>
-
 
       <div className="box-right">
         {" "}
+        <div className="total-cost">
+          <h2>Your total Cost is: € {totalPrice}</h2>
+        </div>{" "}
         <h2>Confirm your delivery details</h2>
         <div className="ordering-area-display">
           <div className="form">
@@ -116,10 +93,9 @@ export default function TemporaryMenu() {
           ></textarea>
           <div>
             <Link to="/PaymentPage">
-              <button className="order-btn">
-                <span>Check Out</span>
-              </button>
-            </Link>
+            <button className="order-btn">
+              <span>Check Out</span>
+            </button></Link>
           </div>
         </div>
       </div>

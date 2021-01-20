@@ -19,10 +19,14 @@ margin-right: 2px;
     border: 2px solid rgb(2, 2, 2);
    }
 
-   .box-Left h2{
-       margin-left: 5%;
+   .order-title-lft{
+
+   }
+
+   .order-title-lft h2{
+        margin-left: 35%;
        color: rgb(7, 7, 7);
-       align-content: center;
+       
    }
   
    .box-right{
@@ -39,7 +43,7 @@ margin-right: 2px;
    }
 
    .box-right h2{
-    margin-left: 5%;
+    margin-left: 25%;
     color: rgb(7, 7, 7);
     align-content: center;
 }
@@ -51,6 +55,10 @@ margin-right: 2px;
         height: 80px;
         border-radius: 10px;
     }
+
+.list li{
+  list-style-type:none;
+}
 
     .bk-quantity{
         margin: 10px;
@@ -80,7 +88,7 @@ margin-right: 2px;
         border-radius: 10px;
     }
 
-    .add-btn {
+    .remove-btn {
         display: inline-block;
         border-radius: 4px;
          border: none;
@@ -95,7 +103,7 @@ margin-right: 2px;
         
       }
       
-      .add-btn span {
+      .remove-btn span {
         cursor: pointer;
         display: inline-block;
         position: relative;
@@ -103,7 +111,7 @@ margin-right: 2px;
         
       }
       
-      .add-btn span:after {
+      .remove-btn span:after {
         content: '\00bb';
         position: absolute;
         opacity: 0;
@@ -112,11 +120,11 @@ margin-right: 2px;
         transition: 0.5s;
       }
       
-      .add-btn:hover span {
+      .remove-btn:hover span {
         padding-right: 25px;
       }
       
-      .add-btn:hover span:after {
+      .remove-btn:hover span:after {
         opacity: 1;
         right: 0;
       }
@@ -184,3 +192,76 @@ margin-right: 2px;
         opacity: 1;
         right: 0;
       }
+
+      .dish-name{
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .addrem-btn{
+        margin-top: 0px;
+        justify-content: end;
+      }
+
+      .total-cost {
+        border: 2px solid rgb(2, 2, 2);
+        width:80%;
+        background: aqua;
+        margin-left: 60px;
+        border-radius: 10px;
+      }
+
+
+
+      .remove-btn {
+        display: inline-block;
+        border-radius: 4px;
+         border: none;
+        color: #080808;
+        text-align: center;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 0px;
+        width: 100%;
+        height: 30px;
+        background-color: rgb(253, 74, 74);        
+      }
+      
+      .remove-btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+                
+      }
+      
+      .remove-btn span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .remove-btn:hover span {
+        padding-right: 25px;
+      }
+      
+      .remove-btn:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+.qty-align{
+margin-right: 50px;
+}
+
+.subtotal{
+  margin-left: 40px;
+  margin-top: -25px;
+  font-size:20px ;
+}
