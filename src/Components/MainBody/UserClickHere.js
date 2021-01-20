@@ -22,9 +22,9 @@ export default function UserClickHere() {
       </div>
 
       <div className="btnAlign">
-      <Link to="/UserSignUp">
+      <Link to="/Login">
             <button type="submit" className="button">
-              Order Food
+              Order Food Now
             </button>
           </Link>
       </div>

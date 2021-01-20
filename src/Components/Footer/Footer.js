@@ -5,15 +5,34 @@ import "./Footer.css";
 
 function Footer() {
   return (
+    
     <div className="main-footer">
+    <hr></hr>
       <div className="row">
         {/* Column1 */}
         <div className="col">
           <h4>Ting-Tong</h4>
-          <h5>
-            <p className="margin">Berlin, Germany</p>
-            <p className="marginP">123 Streeet South North</p>
-          </h5>
+             
+        </div>
+        {/* Column2 */}
+        <div className="footer-cl2">
+          
+          <div>
+            ABOUT US
+            </div>
+          <div>
+            OUR PROMISE
+            </div>
+
+        </div>
+        {/* Column3 */}
+        <div className="col">
+          <ui className="list-unstyled">
+                      <li className="styleFont">TERMS & CONDITIONS</li>
+          </ui>
+        </div>
+      </div>
+      <div>
           <ul className="socialNetwork">
             <a href="https://www.pinterest.com/">
               <img
@@ -44,49 +63,7 @@ function Footer() {
               />
             </a>
           </ul>
-        </div>
-        {/* Column2 */}
-        <div className="col">
-          <ui className="list-unstyled">
-            <li>
-              <Link className="styleFont" to="/">
-                HOME
-              </Link>
-            </li>
-            <li>
-              <Link className="styleFont" to="/OrderFood">
-                ORDER FOOD
-              </Link>
-            </li>
-            <li>
-              <Link className="styleFont" to="/ChefSignUp">
-                CHEF SIGN-UP
-              </Link>
-            </li>
-            <li>
-              <Link className="styleFont" to="/AboutUs">
-                ABOUT US
-              </Link>
-            </li>
-            <li>
-              <Link className="styleFont" to="/OurPromise">
-                OUR PROMISE
-              </Link>
-            </li>
-          </ui>
-        </div>
-        {/* Column3 */}
-        <div className="col">
-          <ui className="list-unstyled">
-            <li className="styleFont">Contact Us</li>
-            <li className="styleFont">Chef's T&C</li>
-            <li className="styleFont">User T&C</li>
-            <li className="styleFont">Privacy Policy</li>
-            <li className="styleFont">Cookie Policy</li>
-          </ui>
-        </div>
-      </div>
-      <hr></hr>
+          </div> 
       <div>
         <p className="copyRight">
           &copy;{new Date().getFullYear()} Ting-Tong | All rights reserved |

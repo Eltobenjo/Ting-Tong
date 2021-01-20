@@ -19,7 +19,7 @@
 	margin: 0 auto;
 	margin-bottom: 1em;
     font-weight: bold;
-    background-color: rgba(11, 109, 2, 0.377);
+    background-color: rgba(90, 90, 90, 0.815);
   
    padding-left: 10px;
     padding-right: 10px;
@@ -41,9 +41,9 @@ display: flex;
 }
 
 .selectionCriteria {
-    width:750px;
+    width:950px;
     height: 200px;
-   background-color:#0000007c;
+   background-color:#030272;
     border-radius:10px;
     position:relative;
     margin:0 auto;
@@ -51,11 +51,12 @@ display: flex;
     
     
 }
-.selectionCriteria h3{
+.selectionCriteria h2{
 margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-padding-top: 10px;    
+padding-top: 10px;   
+color: rgb(255, 255, 255); 
 }
 
 .selectionCriteria p{

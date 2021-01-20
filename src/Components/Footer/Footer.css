@@ -5,7 +5,7 @@
     bottom: 0;
     width: 100%;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 100px;
       
   }
 
@@ -28,6 +28,7 @@
 
   .socialNetwork {
     display: flex;
+    justify-content: center;
 padding-left: 0px;
   }
   .socialNetwork a{
@@ -65,4 +66,11 @@ padding-left: 0px;
 
       .copyRight {
         text-align: center;
+      }
+
+      .footer-cl2{
+        width:500px;
+        justify-content: space-around;
+        display: flex;
+        font-weight: bolder;
       }

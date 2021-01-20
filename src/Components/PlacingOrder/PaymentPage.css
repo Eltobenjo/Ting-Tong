@@ -1,0 +1,16 @@
+.payment-icons{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.payment-icons img{
+    width:100px;
+    margin-left: 60px;
+}
+
+
+.payment-icons img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    }

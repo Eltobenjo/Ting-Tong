@@ -53,7 +53,7 @@ export default function SignUp() {
 
   return (
     <Container component="main" maxWidth="xs">
-        <div className="ChefSU-Heading">
+        <div className="UserSU-Heading">
         <h1>SIGN UP to select a range of 'Healthy' and 'Reasoably Priced' food</h1>
       </div>
       <CssBaseline />

@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="logo-title">
+      <div>
         <Link to="/" className="logo" onClick={closeMobileMenu}>
           <img className="logo-img" src={TTdgreen} alt="Logo" />
           <h4>Ting-Tong </h4> <h6>-Your Homely Food Partner</h6>
@@ -44,6 +44,21 @@ const NavBar = () => {
         </li>
 
         <li className="link">
+          <Link to="/JoinOurTeam" onClick={closeMobileMenu}>
+            JOIN OUR TEAM
+          </Link>
+        </li>
+        <li className="link">
+          <Link to="/AboutUs" onClick={closeMobileMenu}>
+            ABOUT US
+          </Link>
+        </li>
+        <li className="link">
+          <Link to="/OurPromise" onClick={closeMobileMenu}>
+            OUR PROMISE
+          </Link>
+        </li>
+        <li className="link">
           <Link to="/Login" onClick={closeMobileMenu}>
             LOGIN
           </Link>
@@ -55,7 +70,7 @@ const NavBar = () => {
         </li>
         <li className="link">
           <Link to="/ChefData" onClick={closeMobileMenu}>
-            CHEFS
+            ChefData
           </Link>
         </li>
         <li className="link">

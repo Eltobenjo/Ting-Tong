@@ -1,0 +1,13 @@
+.chefCardTitle{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.chefCardTitle h1 {
+   
+    color:rgb(11, 2, 136);
+    font-size: 50px;
+
+}

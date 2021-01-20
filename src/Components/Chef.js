@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -8,6 +9,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import chefs from "./data.json";
+
+import "./chef.css"
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -18,6 +22,9 @@ export default function ImgMediaCard() {
   const classes = useStyles();
 
   return (
+    <div>
+    <div className="chefCardTitle"><h1>Ting Tong's Certified Chefs</h1></div>
+    
     <div className='chef'>
      {chefs.map(chef=>{
                 return (
@@ -51,15 +58,17 @@ export default function ImgMediaCard() {
                         </Typography>
                       </CardContent>
                     </CardActionArea>
-                    <CardActions>
+                      <CardActions>
+                      <Link to="/ChefPage">
                       <Button size="small" color="primary">
                         explore
-                      </Button>
+                      </Button> </ Link>
                     </CardActions>
                   </Card>
                   </div>
                 );
         })}
-    </div>
+      </div>
+      </div>
   );
 }
