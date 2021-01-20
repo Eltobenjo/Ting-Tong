@@ -30,10 +30,13 @@ const useStyles = makeStyles((theme) => ({
   form: {
     width: "100%", // Fix IE 11 issue.
     marginTop: theme.spacing(3),
+   
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+
+
 }));
 
 export default function SignUp() {
@@ -50,9 +53,10 @@ export default function SignUp() {
           <LockOutlinedIcon />
         </Avatar>
         <div className="csignup-color">
-        <Typography component="h1" variant="h5" fontWeight="fontWeightBold">
-          Sign Up
-        </Typography></div>
+          <Typography component="h1" variant="h5" fontWeight="fontWeightBold">
+            Sign Up
+          </Typography>
+        </div>
         <form className={classes.form} noValidate>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
@@ -77,6 +81,7 @@ export default function SignUp() {
                 label="Last Name"
                 name="lastName"
                 autoComplete="lname"
+               
               />
             </Grid>
             <Grid item xs={12}>
@@ -111,26 +116,26 @@ export default function SignUp() {
           </Grid>
           <Link to="/Success">
             <div className="cSignUp-btn">
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-              className={classes.submit}
-            >
-              Sign Up
-            </Button>{" "}</div>
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                color="primary"
+                className={classes.submit}
+              >
+                Sign Up
+              </Button>
+            </div>
           </Link>
           <Grid container justify="flex-start">
             <Grid item>
               <div className="clogin">
-                <Link to="/Login" >Already have an account? Login</Link>
-                </div>
+                <Link to="/Login">Already have an account? Login</Link>
+              </div>
             </Grid>
           </Grid>
         </form>
       </div>
-
     </Container>
   );
 }

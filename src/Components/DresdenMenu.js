@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../Context/AppContext";
 import chefs from "./data.json";
 
-export default function BerlinMenu() {
+export default function DresdenMenu() {
   const { setShoppingCart } = useContext(AppContext);
 
   const handleClick = (e) => {
@@ -13,21 +13,20 @@ export default function BerlinMenu() {
     };
     setShoppingCart((previousState) => [...previousState, dishInTheOrder]);
   };
-  const berlin = chefs.find((chef) => chef.location === "Berlin");
+  const berlin = chefs.find((chef) => chef.location === "Dresden");
 
   return (
-    <div className="ob">
+    <div className="App">
       <ul>
         {berlin.dishes.map((item) => (
-          <button className="orderButton"><span>
-            <li onClick={handleClick} id={item.id} data-price={item.price}>
-              {item.name} {""}€{item.price}
-            </li></span>
-          </button>
+          <li onClick={handleClick} id={item.id} data-price={item.price}>
+
+            {item.name} {''} 
+            €{item.price}
+
+          </li>
         ))}
       </ul>
     </div>
   );
 }
-
-

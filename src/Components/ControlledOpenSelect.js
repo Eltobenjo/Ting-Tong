@@ -10,12 +10,19 @@ const useStyles = makeStyles((theme) => ({
   button: {
     display: "block",
     marginTop: theme.spacing(2),
+    fontSize: "1.5em",
+    textAlign:"center",
   },
   formControl: {
     margin: theme.spacing(1),
     minWidth: 120,
-    width:500,
+    width: 500,
+    fontSize: "1.5em",
+    
   },
+ 
+
+  
 }));
 
 export default function ControlledOpenSelect() {
@@ -36,8 +43,12 @@ export default function ControlledOpenSelect() {
   };
 
   return (
-    <div className='selector'>
-      <Button className={classes.button} onClick={handleOpen}>Choose Location</Button>
+    <div className="selector">
+      <div className="search-title">
+        <Button className={classes.button} onClick={handleOpen}>
+          <h1>Choose Your Location</h1>
+        </Button>
+      </div>
       <FormControl className={classes.formControl}>
         <InputLabel id="demo-controlled-open-select-label">City</InputLabel>
         
@@ -50,18 +61,33 @@ export default function ControlledOpenSelect() {
           value={city}
           onChange={handleChange}
         >
-          <MenuItem value="">
-           
-          </MenuItem>
-          <MenuItem value={city}>
-            <a href="/Berlin">Berlin</a>
-          </MenuItem>
-          <MenuItem value={city}>
-            <a href="/Frankfurt">Frankfurt</a>
-          </MenuItem>
-          <MenuItem value={city}><a href='/Munich'>Munich</a></MenuItem>
+          <div className="menu">
+            <MenuItem value={city}>
+              <a href="/Berlin">
+                <h3>Berlin</h3>
+              </a>
+            </MenuItem>
+            <MenuItem value={city}>
+              <a href="/Frankfurt">
+                <h3>Frankfurt</h3>
+              </a>
+            </MenuItem>
+            <MenuItem value={city}>
+              <a href="/Munich">
+                <h3>Munich</h3>
+              </a>
+            </MenuItem>
+            <MenuItem value={city}>
+              <a href="/Dresden">
+                <h3>Dresden</h3>
+              </a>
+            </MenuItem>
+          </div>
         </Select>
       </FormControl>
+      <div className='wms'>
+        <img src="../Images/WorldMapSpices.jpg" alt=" WMS"></img>
+      </div>
     </div>
   );
 }
