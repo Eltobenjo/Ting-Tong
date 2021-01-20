@@ -13,7 +13,14 @@ background-size: 64% 83%;
 
 }
 
-
+.cards {
+    display:flex;
+    flex-direction: row;
+   margin-left: 35%;
+    position: relative;
+    left: 0%;
+    font-size:large ;
+}
 .chef {
     display:flex;
     flex-direction: row;
@@ -26,108 +33,10 @@ background-size: 64% 83%;
     margin: 10px;
 }
 .selector {
-    text-align: center;
-    
-}
-
-.card-container {
-   text-align: center;
-   margin-top: 0;
+    margin-left: 750px;
+    margin-bottom: 500px;
    
 }
-
-
-li {
-    list-style: none;
-    
-}
-ul {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-}
-.menu a  {
-    text-align: center;
-    text-decoration: none;
-    
-    width: 100%;
-  
-  
-}
-.menu img{
-    height: 100px;
-    width: 100px;
-}
-.selector h1 {
-    color:darkblue;
- 
-   
-}
-.search-title button{
-    text-align: center;
-    width: 100%;
-}
-.card h1 {
-    color: darkblue;
-}
-.cardHeader {
-    text-align: center;
-    padding: 0;
-    margin-top: -80;
-  
-
-}
-.cardHeader h3 {
-  margin: 0;
-}
-.orderButton{
-    
-
-   
-        display: inline-block;
-        border-radius: 4px;
-        background-color: #f4511e;
-        border: none;
-        color: #FFFFFF;
-        text-align: center;
-       font-size: 18px;
-        padding: 5px;
-        width: 200px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 2px;
-    }
-
-    .button span {
-        cursor: pointer;
-      
-        position: relative;
-        transition: 0.5s;
-    }
-
-    .button span:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-    }
-
-    .button:hover span {
-        padding-right: 25px;
-    }
-
-    .button:hover span:after {
-        opacity: 1;
-        right: 0;
-    }
-
-.ob{
-    display: flex;
-    height: 50px;
-    width: 100%;
 
 .card-header {
     text-align: center;
@@ -137,5 +46,4 @@ ul {
 
     margin-top: -80px;
     
-
 }
