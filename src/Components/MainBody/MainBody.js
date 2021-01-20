@@ -9,7 +9,7 @@ const MainBody = () => {
       <div className="boxLeft">
         <ChefClickHere />
         <h1>Your KITCHEN, Your RULES.</h1>
-        <div className="chefNote">
+        <div className="chefNote1">
           <h2>
             <i>'EARN MONEY'</i> from your own home kitchen
           </h2>
@@ -18,7 +18,7 @@ const MainBody = () => {
       <div className="boxRight">
         <UserClickHere />
         <h1>Missing HOME FOOD, not ANYMORE.</h1>
-        <div className="chefNote">
+        <div className="chefNote2">
           <h2>
             <i>'ORDER NOW'</i> from your choise of Local Food
           </h2>

@@ -15,18 +15,6 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Din Din
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -61,9 +49,10 @@ export default function SignUp() {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">
+        <div className="csignup-color">
+        <Typography component="h1" variant="h5" fontWeight="fontWeightBold">
           Sign Up
-        </Typography>
+        </Typography></div>
         <form className={classes.form} noValidate>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
@@ -76,6 +65,7 @@ export default function SignUp() {
                 id="firstName"
                 label="First Name"
                 autoFocus
+                fontWeight="fontWeightBold"
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -120,6 +110,7 @@ export default function SignUp() {
             </Grid>
           </Grid>
           <Link to="/Success">
+            <div className="cSignUp-btn">
             <Button
               type="submit"
               fullWidth
@@ -128,18 +119,18 @@ export default function SignUp() {
               className={classes.submit}
             >
               Sign Up
-            </Button>{" "}
+            </Button>{" "}</div>
           </Link>
-          <Grid container justify="flex-end">
+          <Grid container justify="flex-start">
             <Grid item>
-              <Link to="/Login">Already have an account? Login</Link>
+              <div className="clogin">
+                <Link to="/Login" >Already have an account? Login</Link>
+                </div>
             </Grid>
           </Grid>
         </form>
       </div>
-      <Box mt={5}>
-        <Copyright />
-      </Box>
+
     </Container>
   );
 }

@@ -19,7 +19,7 @@ export default function ClickHere() {
         <div className="btnAlign">
           <Link to="/ChefSignUp">
             <button type="submit" className="button">
-              Register
+              Chef Register
             </button>
           </Link>
         </div>
@@ -27,3 +27,4 @@ export default function ClickHere() {
     </div>
   );
 }
+

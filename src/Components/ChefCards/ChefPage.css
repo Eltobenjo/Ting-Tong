@@ -1,0 +1,52 @@
+.CPmainContainer{
+display: flex;
+}
+
+.CPboxLeft{
+    width:380px;
+    height:520px;
+    position:relative;
+ margin-left: 200px;
+
+        }
+   
+   .CPboxRight {
+    width:620px;
+    height:520px;
+    margin-left: 10px;    
+    }
+
+    .cadorna-img {
+        width: 350px;
+        height: 300px;
+        position: absolute;
+        box-shadow: 0px 3px mediumaquamarine;
+        margin-left: 10px;
+        border-radius: 10px;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .star-img{
+        width: 100px;
+        margin-top: 350px;
+        margin-left: 250px;
+    }
+
+    .chef-btn{
+        margin-top: 90px;
+        justify-content: space-between;
+        display: flex;
+        width:180px
+
+    }
+
+    .chefName h1{
+        justify-content: center;
+        align-content: center;
+        justify-self: center;
+        align-self: center;
+        margin-left: 30%;
+        color:rgb(102, 91, 248);
+
+    }

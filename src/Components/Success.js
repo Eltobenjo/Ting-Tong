@@ -64,7 +64,7 @@ export default function HorizontalLabelPositionBelowStepper() {
         <h1>Thanks for registering! We will get in touch with you shortly.</h1>
       </div>
       <div className="selectionCriteria">
-        <h3>Selection Criteria</h3>
+        <h2>Selection Criteria</h2>
         <p>Our Promise to Consumers is Trusted & Verified Home Chefs. Our Team visits every Home Chef house to check for Hygiene and Food Quality. They will be happy to share the opportunity in person.</p>
         <ul>
           <li>A home chef who has passion to cook.</li>
